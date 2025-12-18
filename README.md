@@ -183,7 +183,7 @@ pnpm store prune && pnpm install
 pnpm run dev:antd
 
 # 应用将在 http://localhost:3000 启动
-# 默认用户名/密码: admin/123456
+# 默认用户名/密码: admin/admin123
 ```
 
 **后端启动**（需配合后端项目）：
@@ -202,8 +202,6 @@ java -jar target/seemse-ai.jar
 * **管理端地址**：`http://localhost:3000`
 * **初始账号**：
   * 超级管理员：`admin / admin123`
-  * 系统管理员：`system / system123`
-  * 普通用户：`user / user123`
 
 #### 6. 构建生产版本
 ```bash
