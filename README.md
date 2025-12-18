@@ -410,7 +410,7 @@ git push origin main
 
 ## 📄 许可证
 
-* 本项目基于 [MIT 许可证](LICENSE) 开源，与 RuoYi-AI 许可证保持一致
+* 本项目基于 [Apache-2.0 许可证](LICENSE) 开源
 * 允许个人/企业自由使用、修改、二次分发，无需商业授权
 * 引用本项目时请注明基于 RuoYi-AI 开发：`Based on RuoYi-AI (https://github.com/ageerle/ruoyi-ai)`
 

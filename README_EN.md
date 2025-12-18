@@ -523,13 +523,15 @@ When submitting a Bug report, please include the following information:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
+This project is licensed under the [Apache-2.0 License](LICENSE). You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
 
-**MIT License Brief:**
+**Apache-2.0 License Brief:**
 - ✅ Commercial use allowed
 - ✅ Modification allowed
 - ✅ Distribution allowed
 - ✅ Private use allowed
+- ✅ Patent license granted
+- ❌ Trademark use requires permission
 - ❌ Liability
 - ❌ Warranty
 
