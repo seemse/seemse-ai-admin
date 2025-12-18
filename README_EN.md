@@ -303,19 +303,51 @@ mvn clean package -P prod
 4. **AI Training**: Use AI technology to train and optimize knowledge bases
 5. **Application Integration**: Integrate knowledge bases into digital humans or other applications
 
-### Extension Development Path
+### Extension Development Path (Based on RuoYi-AI Architecture)
 
-#### 1. Frontend Extension Development
-- **Component Development**: Develop custom AI components based on the existing component library
-- **Theme Customization**: Customize system themes and styles
-- **Plugin Development**: Develop functional plugins to extend system capabilities
-- **API Integration**: Integrate third-party AI services and APIs
+#### 🎯 Frontend Extension Modules (Based on RuoYi-AI View Architecture)
+* **AI Capability Management Module**:
+  * AI Model Management: Multi-model configuration, parameter tuning, permission control
+  * Digital Human Management: Avatar configuration, knowledge base association, interaction parameter settings
+  * Intelligent Dialogue: Streaming response support, multi-round dialogue, context memory
 
-#### 2. Backend Extension Development
-- **Business Module**: Develop new business modules and integrate into the existing architecture
-- **Permission Extension**: Extend permission control based on the existing permission system
-- **Data Source**: Add new data sources and integrate into unified data management
-- **Service Integration**: Integrate enterprise internal systems and services
+* **Knowledge Base Management Module**:
+  * Knowledge Classification: Multi-level classification management, permission inheritance, visual display
+  * Knowledge Documents: Multi-format support, version management, collaborative editing
+  * Intelligent Retrieval: Full-text search, AI semantic matching, personalized recommendations
+
+* **System Monitoring Module**:
+  * AI Call Monitoring: Model usage rate, response time, error rate statistics
+  * Resource Monitoring: Knowledge base capacity, user activity, system performance
+  * Log Audit: Operation records, exception tracking, compliance reporting
+
+* **User Permission Module**:
+  * Role Management: Role permission configuration based on organizational structure
+  * User Configuration: Personalized settings, usage preferences, permission inheritance
+  * Organizational Structure: Department management, hierarchical relationships, permission transfer
+
+#### 🔧 Technical Extension Points (Integration with RuoYi-AI Architecture)
+* **Component Library Extension**:
+  * AI Business Components: Model selector, digital human display, knowledge graph
+  * Common Business Components: Permission tree, organizational chart, rich text editor
+  * Visualization Components: Chart display, data dashboard, real-time monitoring
+
+* **State Management Extension**:
+  * AI Module State: Model configuration, dialogue history, knowledge base cache
+  * User State: Permission information, personalized configuration, usage records
+  * System State: Monitoring data, alarm information, operational indicators
+
+* **Utility Functions Extension**:
+  * AI Business Tools: Model call encapsulation, data processing, format conversion
+  * Permission Tools: Permission calculation, role judgment, resource verification
+  * Business Tools: Form validation, data formatting, file processing
+
+#### 🔗 Backend Integration Instructions (Maintain Existing Backend Architecture)
+* **Service Integration**: Cooperate with [seemse_ai](https://github.com/seemse/seemse_ai) backend project
+* **Interface Specification**: Provide complete RESTful API interfaces, support standard HTTP methods
+* **Real-time Communication**: Support WebSocket real-time communication, achieve digital human streaming response
+* **Data Synchronization**: Support real-time data synchronization between frontend and backend, ensure consistency
+* **Security Mechanism**: Inherit RuoYi-AI security framework, including authentication, authorization, encryption, etc.
 
 ## 🔒 Security and Compliance Guarantee (Deep Optimization)
 
