@@ -2,9 +2,23 @@
 
 > [English Documentation](./README_EN.md) | 中文文档
 
-基于 **若依AI管理系统 (RuoYi AI Admin)** 深度定制开发，而若依AI管理系统又是基于 **Vben Admin 框架** 构建的现代化后台管理系统，集成了完整的权限管理、系统监控等企业级功能模块。
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GitHub Stars](https://img.shields.io/github/stars/seemse/seemse-ai-admin.svg?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/seemse/seemse-ai-admin.svg?style=social)
+![Based on RuoYi-AI](https://img.shields.io/badge/Based%20on-RuoYi--AI-blue.svg)
 
-Seemse AI 是一套完整的人工智能解决方案，包含后端服务、管理端、聊天应用等多个子项目，为企业提供全方位的AI能力支持。
+一款**基于 RuoYi-AI 深度定制**的企业级AI管理后台系统，继承若依生态的高可用性、易扩展性，聚焦「AI能力管理 + 企业级权限管控」核心场景，解决传统AI系统管理复杂、权限混乱、部署困难等痛点，实现AI能力快速接入与高效管理的平衡。
+
+## 🔗 项目由来
+
+本项目基于 [RuoYi-AI](https://github.com/ageerle/ruoyi-ai)（若依 AI 增强版）开发，保留了若依框架的**权限管理、系统配置、用户管理**等核心能力，同时针对「AI应用场景」进行深度定制：
+
+* 扩展「AI模型管理、数字人配置、知识库管理」专属模块
+* 强化「精细化权限分级、AI资源安全管控」核心功能
+* 集成「多模型接入、智能对话、数据分析」AI能力
+* 适配「企业级AI部署、多租户管理、合规审计」需求
+
+> 感谢 RuoYi-AI 团队提供的优秀基础框架，本项目将持续同步上游框架的稳定性更新与安全补丁。
 
 ## 🌐 项目生态
 
@@ -34,133 +48,252 @@ Seemse AI 是一套完整的人工智能解决方案，包含以下核心项目�
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## ✨ 项目特性
+## 🌟 核心特性（基于 RuoYi-AI 增强）
 
-- 🎯 **现代化架构**：基于 Vue 3 + TypeScript + Vite 构建，采用最新的前端技术栈
-- 🛠️ **丰富组件**：集成 Ant Design Vue 组件库，提供50+高质量业务组件
-- 🔐 **权限管理**：完整的 RBAC 权限控制体系，支持菜单权限、按钮权限、数据权限
-- 📊 **系统监控**：实时监控系统运行状态，包含在线用户、服务监控、缓存监控等
-- 📱 **响应式设计**：完美适配各种设备屏幕，支持PC、平板、手机等多端访问
-- 🎨 **主题定制**：支持多种主题切换，支持自定义主题色彩
-- 🌍 **国际化支持**：内置国际化方案，支持多语言切换
-- ⚡ **高性能**：基于Vite构建，支持热更新，开发体验极佳
-- 📦 **微前端架构**：支持微前端架构，便于大型项目拆分和维护
-- 🤖 **AI能力集成**：深度集成AI数字人、模型管理、知识库等AI功能模块
-- 📋 **代码生成**：内置代码生成器，支持快速生成CRUD代码
-- 🔧 **低代码开发**：支持表单设计器、流程设计器等低代码开发工具
+### 1. AI能力统一管理（核心增强）
+* **多模型接入**：支持 OpenAI、Claude、文心一言、通义千问等多种AI模型统一配置管理
+* **智能路由**：基于负载均衡和成本优化策略，智能分配AI模型请求
+* **模型监控**：实时监控模型调用状态、响应时间、费用消耗等关键指标
+* **弹性扩展**：支持自定义模型接入，提供标准化API接口规范
 
-## 🚀 技术栈
+### 2. 企业级权限管控（深度优化）
+* **精细化权限**：基于 RuoYi 权限体系，扩展「AI模型/知识库/数字人」专属资源权限
+* **多租户隔离**：支持企业级多租户架构，数据完全隔离，满足SaaS部署需求
+* **动态权限**：支持临时授权、自动回收、权限继承等高级权限管理功能
+* **安全审计**：完整记录AI资源访问日志，支持合规审计和风险预警
 
-### 前端技术
-- **Vue 3** - 渐进式 JavaScript 框架
-- **TypeScript** - JavaScript 的超集
-- **Vite** - 下一代前端构建工具
-- **Ant Design Vue** - 企业级 UI 组件库
-- **Pinia** - Vue 状态管理
-- **Vue Router** - 官方路由管理器
+### 3. AI数字人管理（新增模块）
+* **形象定制**：支持数字人形象、声音、性格等多维度个性化配置
+* **知识库关联**：数字人与知识库智能绑定，提供专业领域问答能力
+* **多场景适配**：支持客服、教育、咨询等多种业务场景快速部署
+* **交互优化**：基于用户反馈持续优化数字人交互体验
 
-### 开发工具
-- **pnpm** - 快速、节省磁盘空间的包管理器
-- **Turbo** - 高性能构建系统
-- **ESLint** - 代码质量检查
-- **Prettier** - 代码格式化
-- **Husky** - Git hooks 工具
-- **Commitlint** - Git提交规范检查
-- **Lint-staged** - 代码提交前检查
+### 4. 智能知识库系统（新增功能）
+* **知识管理**：支持文档、图片、视频等多格式知识内容统一管理
+* **AI检索**：集成语义理解能力，支持智能问答和知识推荐
+* **权限控制**：细粒度知识访问权限，支持部门级、项目级知识隔离
+* **版本管理**：知识内容版本控制，支持历史追溯和变更审计
 
-### 后端集成
-- **Spring Boot** - 后端服务框架（需配合后端项目使用）
-- **MyBatis Plus** - 数据持久层框架
-- **Redis** - 缓存和会话存储
-- **MySQL** - 关系型数据库
+### 5. 数据分析与监控（继承增强）
+* **使用统计**：AI模型调用统计、用户行为分析、成本核算报表
+* **性能监控**：系统性能实时监控，支持自定义告警规则
+* **业务洞察**：基于AI使用数据的业务趋势分析和优化建议
+* **运营支持**：提供运营数据看板，支持决策分析
+
+### 6. 继承 RuoYi-AI 核心优势
+* **完善权限体系**：用户/角色/菜单权限管理，开箱即用
+* **前后端分离**：现代化架构，易于二次开发和功能扩展
+* **企业级特性**：支持Docker部署、分布式缓存、负载均衡
+* **开发效率**：内置代码生成器，支持快速业务功能开发
+
+## 📋 适用场景
+
+* **企业AI能力平台建设**：统一管理和调度企业内部各种AI模型和服务
+* **智能客服系统**：基于数字人技术构建7×24小时智能客服解决方案
+* **知识管理系统**：构建企业智能知识库，支持语义检索和智能问答
+* **教育培训平台**：AI助教、智能答疑、个性化学习推荐等教育场景
+* **内容创作平台**：AI写作、文案生成、内容审核等创作辅助工具
+* **数据分析平台**：基于AI的数据洞察、报表生成、决策支持系统
+
+## 🚀 技术栈（基于 RuoYi-AI 扩展）
+
+| 模块 | 技术选型（与 RuoYi-AI 一致） | AI管理扩展说明 |
+|-----|-----------------------|------------------|
+| 前端框架 | Vue 3 + TypeScript | 新增AI管理专属组件和页面 |
+| UI组件库 | Ant Design Vue | 扩展AI主题样式和交互组件 |
+| 状态管理 | Pinia | 新增AI模型、数字人状态管理 |
+| 构建工具 | Vite + Turbo | 优化构建性能，支持AI相关静态资源处理 |
+| 权限框架 | Spring Security + Shiro | 扩展AI资源权限标识和验证 |
+| 后端框架 | Spring Boot 2.7.x | 新增AI模块控制器和服务 |
+| 数据持久化 | MyBatis Plus | 扩展AI模型、数字人、知识库数据表 |
+| 缓存 | Redis 6.2 + Caffeine | 优化AI模型调用缓存策略 |
+| 数据库 | MySQL 8.0 + PostgreSQL | 支持AI大数据量存储和查询 |
+| 文件存储 | MinIO / 阿里云OSS | AI知识库文件、数字人资源存储 |
+| 部署方式 | Docker + Kubernetes | 支持AI服务弹性扩容和负载均衡 |
+
+## 🔄 与 RuoYi-AI 的差异对比
+
+| 功能点 | RuoYi-AI（上游） | Seemse AI Admin（本项目） |
+|-------|-----------------|------------------------|
+| 核心定位 | 通用AI增强型后台管理系统 | 专业AI能力统一管理平台 |
+| AI模型管理 | 基础AI对话功能 | 多模型统一接入、智能路由、成本优化 |
+| 数字人功能 | 无 | 完整数字人生命周期管理 |
+| 知识库系统 | 无 | 企业级智能知识库，支持语义检索 |
+| 权限管控 | 基础用户/角色/菜单权限 | 精细化AI资源权限 + 多租户隔离 |
+| 数据分析 | 基础系统监控 | AI使用分析、成本核算、业务洞察 |
+| 部署架构 | 单体应用 | 支持微服务、容器化、云原生部署 |
 
 ## 📋 环境要求
 
 - **Node.js** >= 20.10.0
 - **pnpm** >= 9.12.0
 
-## 🛠️ 快速开始
+## 🚀 快速开始
 
-### 1. 环境准备
-确保你的开发环境满足以下要求：
-- Node.js >= 20.10.0 (推荐使用 [nvm](https://github.com/nvm-sh/nvm) 管理Node版本)
-- pnpm >= 9.12.0 (安装命令: `npm install -g pnpm`)
-- Git (用于代码版本管理)
+### 环境要求（与 RuoYi-AI 保持一致）
+* **前端环境**：Node.js 20.10.0+、pnpm 9.12.0+
+* **后端环境**：Java 1.8+、Maven 3.6+
+* **数据库**：MySQL 8.0+ / PostgreSQL 13+
+* **缓存**：Redis 6.0+
+* **文件存储**：MinIO（可选）/ 阿里云OSS
 
-### 2. 克隆项目
+### 安装部署
+
+#### 1. 克隆仓库
 ```bash
-# 克隆项目代码
-git clone https://github.com/seemse/seemse-ai-admin
+# 克隆管理端项目
+git clone https://github.com/seemse/seemse-ai-admin.git
 cd seemse-ai-admin
+
+# （可选）克隆后端服务项目
+git clone https://github.com/seemse/seemse_ai.git
 ```
 
-### 3. 安装依赖
+#### 2. 配置环境
+* **前端配置**：复制配置文件
+```bash
+cp .env.example .env
+```
+
+* **编辑 `.env` 文件**，配置后端API地址：
+```bash
+# API配置
+VITE_GLOB_API_URL=http://localhost:8080
+VITE_GLOB_API_URL_PREFIX=/api
+
+# AI功能配置
+VITE_AI_ENABLE=true
+VITE_AI_DEFAULT_MODEL=gpt-3.5-turbo
+```
+
+#### 3. 安装依赖
 ```bash
 # 安装项目依赖
 pnpm install
 
 # 如果安装过程中出现问题，可以尝试清理缓存后重新安装
-# pnpm store prune && pnpm install
+pnpm store prune && pnpm install
 ```
 
-### 4. 启动开发服务器
+#### 4. 启动服务
+
+**前端启动（Vue 3）**：
 ```bash
-# 启动 Ant Design Vue 版本的开发服务器
+# 启动开发服务器
 pnpm run dev:antd
 
 # 应用将在 http://localhost:3000 启动
 # 默认用户名/密码: admin/123456
 ```
 
-### 5. 构建生产版本
+**后端启动**（需配合后端项目）：
+```bash
+# 进入后端项目目录
+cd seemse_ai
+
+# 编译打包
+mvn clean package -Dmaven.test.skip=true
+
+# 启动服务
+java -jar target/seemse-ai.jar
+```
+
+#### 5. 访问系统
+* **管理端地址**：`http://localhost:3000`
+* **初始账号**：
+  * 超级管理员：`admin / admin123`
+  * 系统管理员：`system / system123`
+  * 普通用户：`user / user123`
+
+#### 6. 构建生产版本
 ```bash
 # 构建生产环境代码
 pnpm run build:antd
 
 # 构建后的文件将输出到 apps/web-antd/dist 目录
+# 支持Docker容器化部署
 ```
 
-### 6. 代码质量检查
-```bash
-# 运行代码格式检查
-pnpm run lint
+## 📖 使用指南
 
-# 运行类型检查
-pnpm run check:type
+### 1. 核心操作流程（基于 RuoYi-AI 扩展）
 
-# 运行代码格式化
-pnpm run format
-```
+#### （1）AI模型配置管理
+1. 登录超级管理员账号，进入「AI管理 > 模型管理」
+2. 点击「新增模型」，配置模型基础信息（名称、类型、API密钥）
+3. 设置模型调用参数（温度、最大token、超时时间等）
+4. 配置模型权限，指定可使用该模型的角色和用户
 
-## 📝 注意事项与最佳实践
+#### （2）数字人创建配置
+1. 进入「AI管理 > 数字人管理」，点击「创建数字人」
+2. 配置数字人基础信息（名称、形象、声音特征）
+3. 关联知识库，设置数字人专业领域和回答范围
+4. 配置交互参数（回答风格、专业程度、敏感词过滤）
+5. 发布数字人，获取调用API接口
+
+#### （3）知识库管理
+1. 进入「AI管理 > 知识库管理」，创建知识分类
+2. 上传知识文档（支持PDF、Word、Markdown等格式）
+3. 配置知识库权限，设置访问范围和编辑权限
+4. 启动AI训练，系统自动提取知识特征建立索引
+5. 知识库与数字人绑定，提供专业问答能力
+
+### 2. 扩展开发（基于 RuoYi-AI 架构）
+* **前端扩展路径**：
+  * AI管理组件：`apps/web-antd/src/views/operator/`
+  * 共享组件：`packages/@core/ui-kit/`
+  * 类型定义：`packages/types/`
+  
+* **后端集成说明**：
+  * 需配合 [seemse_ai](https://github.com/seemse/seemse_ai) 后端项目使用
+  * 提供完整的RESTful API接口
+  * 支持WebSocket实时通信（数字人流式响应）
+
+## 🛡️ 安全与合规保障（深度优化）
+
+### 数据安全保障
+* **传输加密**：全站HTTPS加密传输，支持TLS 1.3
+* **数据脱敏**：敏感信息自动脱敏处理，支持自定义脱敏规则
+* **访问控制**：基于RBAC的细粒度权限控制，支持动态权限调整
+* **审计日志**：完整的操作审计日志，支持合规审查
+
+### AI内容安全
+* **内容过滤**：内置敏感词库，支持自定义敏感词配置
+* **合规检查**：AI生成内容合规性检查，避免不当言论
+* **人工审核**：支持AI辅助+人工审核的双重保障机制
+* **版本追溯**：知识库和数字人配置变更完整追溯
+
+### 企业级部署
+* **高可用架构**：支持集群部署，自动故障转移
+* **数据备份**：自动数据备份和恢复机制
+* **监控告警**：实时监控和异常告警通知
+* **性能优化**：支持CDN加速和负载均衡配置
+
+## 📝 开发最佳实践
 
 ### 🔧 开发环境配置
-1. **Node.js 版本**：请确保使用 Node.js 20.10.0 或更高版本
-2. **包管理器**：项目使用 pnpm，请勿使用 npm 或 yarn
-3. **开发环境**：推荐使用 VS Code 并安装相关插件
-   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 官方插件
-   - [TypeScript Vue Plugin](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) - TypeScript 支持
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 代码质量检查
-   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 代码格式化
-4. **浏览器支持**：支持现代浏览器，不支持 IE
+1. **Node.js 版本管理**：推荐使用[nvm](https://github.com/nvm-sh/nvm)管理Node版本
+2. **包管理器**：强制使用pnpm，避免依赖冲突
+3. **编辑器推荐**：VS Code + Volar插件 + ESLint插件
+4. **代码规范**：遵循项目ESLint配置，提交前自动格式化
 
 ### 🚀 性能优化建议
-- 使用 `pnpm run build:analyze` 分析构建产物大小
-- 按需引入组件库，减少打包体积
-- 使用 Web Workers 处理复杂计算任务
-- 启用 HTTP/2 和 Gzip 压缩提升加载速度
+* **构建优化**：使用`pnpm run build:analyze`分析构建产物
+* **组件按需加载**：路由级别代码分割，减少首屏加载时间
+* **图片资源优化**：使用WebP格式，支持懒加载
+* **缓存策略**：合理配置浏览器缓存和CDN缓存
 
-### 🔒 安全建议
-- 定期更新依赖包版本，修复安全漏洞
-- 使用 HTTPS 协议部署生产环境
-- 配置适当的 CORS 策略
-- 对用户输入进行严格的校验和过滤
+### 🔒 安全开发规范
+* **依赖管理**：定期更新依赖包，修复安全漏洞
+* **输入验证**：前后端双重输入验证，防止XSS和SQL注入
+* **权限验证**：每个API调用都要验证用户权限
+* **错误处理**：统一错误处理，避免敏感信息泄露
 
-### 📊 监控与日志
-- 建议集成前端监控工具（如 Sentry）
-- 配置适当的日志级别和输出
-- 监控核心性能指标（FCP、LCP、FID等）
-- 设置错误告警机制
+### 📊 监控与运维
+* **前端监控**：建议集成[Sentry](https://sentry.io/)错误监控
+* **性能监控**：使用Web Vitals指标监控用户体验
+* **业务监控**：AI模型调用成功率、响应时间等关键指标
+* **日志管理**：结构化日志输出，支持日志聚合分析
 
 ## 📚 项目结构
 
@@ -200,6 +333,62 @@ seemse-ai-admin/
 └── scripts/               # 构建脚本
 ```
 
+## 🤝 贡献指南
+
+### 1. 贡献方式
+1. Fork 本仓库
+2. 创建特性分支：`git checkout -b feature/新增AI模型管理功能`
+3. 提交代码：`git commit -m "feat: 新增AI模型批量导入功能"`（遵循 Angular 提交规范）
+4. 推送分支：`git push origin feature/新增AI模型管理功能`
+5. 提交 Pull Request（需说明功能背景、修改内容、测试情况）
+
+### 2. 同步上游更新（重要）
+由于本项目基于 RuoYi-AI 开发，建议定期同步上游代码：
+```bash
+# 添加上游仓库（仅需执行一次）
+git remote add upstream https://github.com/ageerle/ruoyi-ai.git
+
+# 拉取上游最新代码
+git fetch upstream
+
+# 合并到本地主分支
+git merge upstream/main main
+
+# 解决冲突后推送
+git push origin main
+```
+
+### 3. 贡献规范
+* **代码风格**：遵循项目ESLint配置，提交前执行代码格式化
+* **功能开发**：新增功能需配套文档和测试用例
+* **Bug修复**：需说明复现步骤、修复方案，确保不影响原有功能
+* **性能优化**：提供优化前后的性能对比数据
+
+## 🐛 问题反馈
+
+* **Bug报告**：提交 [Issue](https://github.com/seemse/seemse-ai-admin/issues) 时请包含：
+  * 环境信息（Node.js版本、浏览器版本、部署方式）
+  * 复现步骤（详细操作步骤和预期结果）
+  * 错误日志或截图
+  * 与RuoYi-AI相关的问题请同时说明上游版本
+
+* **功能建议**：欢迎提出新功能建议，我们会评估可行性和优先级
+* **技术支持**：加入我们的技术交流群获取实时支持
+
+## 📄 许可证
+
+* 本项目基于 [MIT 许可证](LICENSE) 开源，与 RuoYi-AI 许可证保持一致
+* 允许个人/企业自由使用、修改、二次分发，无需商业授权
+* 引用本项目时请注明基于 RuoYi-AI 开发：`Based on RuoYi-AI (https://github.com/ageerle/ruoyi-ai)`
+
+## 📞 联系与参考
+
+* **项目主页**：[https://github.com/seemse/seemse-ai-admin](https://github.com/seemse/seemse-ai-admin)
+* **后端项目**：[https://github.com/seemse/seemse_ai](https://github.com/seemse/seemse_ai)
+* **上游项目**：[RuoYi-AI](https://github.com/ageerle/ruoyi-ai)
+* **官方文档**：[Seemse AI Wiki](https://github.com/seemse/seemse-ai-admin/wiki)
+* **若依文档**：[RuoYi 官方文档](https://doc.ruoyi.vip/)
+
 ---
 
-**Seemse AI Admin - 让企业级后台管理更简单、更高效！**
+**Seemse AI Admin - 让AI能力管理更简单、更专业、更安全！**
